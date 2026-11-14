@@ -102,9 +102,16 @@ Output (یا متن اصلی اگر گارد رد کند)
 ```bash
 pip install -r requirements.txt
 # سپس notebook 03 را در Colab (GPU T4) اجرا کن
+```
 
-🗺️ Roadmap
-نگاه کن به docs/ROADMAP.md.
+---
 
-📄 مجوز
+## 🗺️ Roadmap
+
+نگاه کن به [`docs/ROADMAP.md`](docs/ROADMAP.md).
+
+---
+
+## 📄 مجوز
+
 MIT — استفاده آزاد.
