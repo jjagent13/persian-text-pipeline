@@ -1,5 +1,13 @@
 # Persian Text Pipeline 🇮🇷
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Proof--of--Concept-yellow)
+
+[🇬🇧 English](README.en.md) | 🇮🇷 فارسی
+
 پایپ‌لاین پردازش متن فارسی: **Sanitizer** + **Transformer Spell Corrector** + **REST API**
 
 ---
