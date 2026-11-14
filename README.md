@@ -1,7 +1,5 @@
 # Persian Text Pipeline 🇮🇷
 
-
-
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi&logoColor=white)
@@ -35,6 +33,27 @@
 
 ---
 
+## 📝 نمونه‌ها
+
+### Sanitizer (قاعده‌محور)
+
+| ورودی | خروجی |
+|--------|--------|
+| `سلام   می روم كتَب هاي جديد ٣ عدد` | `سلام می‌روم کتب‌های جدید 3 عدد` |
+| `<b>خوب</b> ۱۲۳۴ سايت` | `خوب 1234 سایت` |
+
+### Spell Corrector (با Guard)
+
+| ورودی | خروجی | توضیح |
+|--------|--------|--------|
+| `سلام حال شما چطور است` | `سلام حال شما چطور است` | ✅ (in-distribution) |
+| `من به مدرصه می‌روم` | `من به مدرصه می‌روم` | ⛔ Guard رد کرد (OOD) |
+| `برف روی کوه‌ها نشستة است` | `برف روی کوه‌ها نشستة است` | ⛔ Guard رد کرد |
+
+> **فلسفه:** سیستم هرگز متن کاربر را خراب نمی‌کند. اگر مطمئن نیست، متن اصلی + دلیل برمی‌گرداند.
+
+---
+
 ## 📂 ساختار پروژه
 
 | Notebook | توضیح |
@@ -47,7 +66,6 @@
 ---
 
 ## 🏗️ معماری
-
 Input Text
 ↓
 [Sanitizer] NFKC → strip controls → ar2fa → digits → zwnj → whitespace
@@ -90,6 +108,3 @@ pip install -r requirements.txt
 
 📄 مجوز
 MIT — استفاده آزاد.
-
-
-
